@@ -1,0 +1,12 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend/my-react-app
+    ports:
+      - "3004:3002"
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3001:3001"
